@@ -1,10 +1,10 @@
 <VirtualHost *:80>
 	ServerAdmin jdeerhake@gmail.com
-  ServerName pattyspals.com
-  ServerAlias www.pattyspals.com
+	ServerName pattyspals.com
+	ServerAlias www.pattyspals.com
   
-	DocumentRoot /www/pattyspals.com
-	<Directory /www/pattyspals.com/>
+	DocumentRoot /www/pattyspals-com
+	<Directory /www/pattyspals-com/>
 		Options -Indexes FollowSymLinks MultiViews
 		AllowOverride None
 		Order allow,deny
