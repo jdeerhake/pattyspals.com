@@ -1,0 +1,21 @@
+<VirtualHost *:80>
+	ServerAdmin jdeerhake@gmail.com
+  ServerName pattyspals.com
+  ServerAlias www.pattyspals.com
+  
+	DocumentRoot /www/pattyspals.com
+	<Directory /www/pattyspals.com/>
+		Options -Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog /var/log/apache2/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog /var/log/apache2/access.log combined
+</VirtualHost>
