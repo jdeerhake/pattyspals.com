@@ -2,7 +2,7 @@
 	ServerAdmin jdeerhake@gmail.com
 	ServerName pattyspals.com
 	ServerAlias www.pattyspals.com
-  
+
 	DocumentRoot /www/pattyspals-com
 	<Directory /www/pattyspals-com/>
 		Options -Indexes FollowSymLinks MultiViews
@@ -11,11 +11,12 @@
 		allow from all
 	</Directory>
 
-	ErrorLog /var/log/apache2/error.log
+	ErrorLog /www/pattyspals-com/log/error.log
 
 	# Possible values include: debug, info, notice, warn, error, crit,
 	# alert, emerg.
 	LogLevel warn
 
-	CustomLog /var/log/apache2/pattyspals-com/access.log jstail
+	CustomLog /www/pattyspals-com/log/access.log
 </VirtualHost>
+
