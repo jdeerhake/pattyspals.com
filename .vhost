@@ -17,6 +17,6 @@
 	# alert, emerg.
 	LogLevel warn
 
-	CustomLog /www/pattyspals-com/log/access.log
+	CustomLog /www/pattyspals-com/log/access.log combined
 </VirtualHost>
 
