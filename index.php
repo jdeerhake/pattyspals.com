@@ -32,12 +32,13 @@
 					<span class="nextEvent">Tee off for Patty...</span>
 					<a href="golf.php" class="ctaButton">Register now!</a>
 					<h2 class="ctaText">Puttin' Fore Patty Golf Scramble</h2>
-				<?php break; 
+				<?php break;
 			} ?>-->
-				<span class="nextEvent">Thanks to everyone who attended!</span>
+				<span class="nextEvent">Patty's Day 2010 Pics</span>
 				<a href="res.php" class="ctaButton">Click here!</a>
 				<h2 class="ctaText">We now have pictures and results from Patty's Day!</h2>
-		
+
 	</div>
 </div><!-- colorContent -->
 <?php include('include/footer.php'); ?>
+
