@@ -1,5 +1,6 @@
 #/bin/bash
 if [ $1 == "production" ]; then
+  git push
   ssh jdeerhake@git.jdeerhake.com 'cd /www/pattyspals-com;git checkout master;git pull;git checkout production;git merge master;git push'
 fi
 if [ $1 == "staging" ]; then

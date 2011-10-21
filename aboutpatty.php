@@ -7,8 +7,8 @@
 		<p>Go to her <a href="http://www.caringbridge.org/visit/pattyrojas">Caringbridge</a> page to be part of Patty's journey and to let her know you support her!</p>
 	</div><!-- leftCol -->
 	<div class="rightCol">
-		<h4>Buy a raffle ticket to support Patty</h4>
-		<p>See any nurse in SRMC ICU to purchase tickets. Win a big screen TV, Spa Day or $100 Starbucks gift card!</p>
+		<h4>Looking for ways to help?</h4>
+		<p><a href="events.php">Check out our fund raising events!</a></p>
 	</div><!-- rightCol -->
 	<div class="clearFloat"></div>
 </div><!-- eventsSummary -->
