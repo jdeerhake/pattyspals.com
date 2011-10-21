@@ -60,7 +60,7 @@
 <div id="footer">
 	<div class="innerWrap">
 		<div id="copyright">
-			<p>&copy; 2010</p>
+			<p>&copy; 2011</p>
 		</div>
 		<div id="footerNav">
 			<ul class="hMenu">
