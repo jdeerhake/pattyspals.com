@@ -6,7 +6,7 @@
 			<img class="ePicture" src="images/purse.jpg" />
 			<h5><a href="files/pursebingo.docx">Patty's Purse Bingo, Delphos Eagles</a></h5>
 			<span class="date">November 11th, 5:30pm</span>
-			<p>$30 admission includes dinner, 20 games of bingo with designer purse prizes, a door prize ticket and a fun girls’ nite out!!
+			<p style="font-size:17px">$30 admission includes dinner, 20 games of bingo with designer purse prizes, a door prize ticket and a fun girls’ nite out!!
 			Drinks available for purchase, as well as extra bingo cards, raffle & 50/50 tickets, and chances on other items.  <a href="files/pursebingo.docx">...</a></p>
 			<div class="clearFloat"></div>
 		</div>

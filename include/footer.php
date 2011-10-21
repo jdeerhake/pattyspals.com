@@ -4,11 +4,16 @@
 					<img class="bigIcon" src="images/calendar.png" />
 					<h3 class="boxTitle">Upcoming Events</h3>
 					<span class="item">
-						<strong>Ongoing - </strong>
-						<a href="#">Patty's Pals Bracelet Sale</a>
+						<strong>Nov 11th - </strong>
+						<a href="events.php">Patty's Purse Bingo</a>
 					</span>
 					<span class="item">
-					  More coming soon!
+						<strong>Oct 22nd - </strong>
+						<a href="events.php">Patty's Chicken BBQ</a>
+					</span>
+				  <span class="item">
+						<strong>Ongoing - </strong>
+						<a href="#">Patty's Pals Bracelet Sale</a>
 					</span>
 				</div>
 				<div class="bottom">
@@ -40,7 +45,7 @@
 						Distribute flyers to help raise awareness:
 						<ul>
 							<li>
-								<a href="files/pattysday_flyer1.doc">Patty's Day Flyer</a>
+								<a href="files/pursebingo.docx">Patty's Purse Bingo Flyer</a>
 							</li>
 						</ul>
 					</span>
@@ -93,3 +98,4 @@
 </body>
 
 </html>
+
