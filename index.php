@@ -2,7 +2,7 @@
 <div class="colorContent roundedCorners">
 	<div class="top roundedCorners">
 		<div class="imageHolder">
-			<img class="rightImage" id="mainPic" src="images/photos/patty7.jpg" alt="Patty" />
+			<img class="rightImage" id="mainPic" src="images/photos/patty.jpg" alt="Patty" />
 		</div>
 		<h2 style="margin-top: -10px;">Welcome to PattysPals.com</h2>
 		<p>We are an organization dedicated to helping our friend Patty in any way we can.  And we could use your help!</p>
