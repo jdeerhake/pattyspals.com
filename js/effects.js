@@ -90,7 +90,7 @@ var pictureCycle = {
 	  var list = [];
 
 	  jQuery.ajax({
-      url : "http://api.flickr.com/services/feeds/photoset.gne?set=72157627901194815&nsid=469287246@N07&lang=en-us&format=json",
+      url : "http://api.flickr.com/services/feeds/photoset.gne?set=72157627901194815&nsid=69287246@N07&lang=en-us&format=json",
       dataType : "jsonp",
       jsonp : "jsoncallback",
       success : function(data) {
