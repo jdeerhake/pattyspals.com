@@ -10,34 +10,25 @@
 		<p><a href="aboutpatty.php">Click here</a> to learn more about Patty, why she's so special, and why she's in need of your help.</p>
 	</div>
 	<div class="bottom">
-		<!--<?php
-			$i = rand(0, 3);
+		<?php
+			$i = rand(0, 2);
 			switch($i) {
 				case '0': ?>
-					<span class="nextEvent">Hit the road with us...</span>
-					<a href="5k.php" class="ctaButton">Register now!</a>
-					<h2 class="ctaText">Pounding Pavement for Patty 5k</h2>
+					<span class="nextEvent">Patty's Day 2010 Pics</span>
+				  <a href="http://www.flickr.com/photos/69287246@N07/sets/72157628025996758/" target="_blank" class="ctaButton">Click here!</a>
+				  <h2 class="ctaText">We now have pictures and results from Patty's Day!</h2>
 				<?php break;
 				case '1': ?>
-					<span class="nextEvent">Fun for kids of all ages...</span>
-					<a href="tottrot.php" class="ctaButton">Register now!</a>
-					<h2 class="ctaText">Playin' for Patty Tot Trot</h2>
-				<?php break;
-				case '2': ?>
-					<span class="nextEvent">Something the whole family can enjoy...</span>
-					<a href="dogjog.php" class="ctaButton">Register now!</a>
-					<h2 class="ctaText">Pooches for Patty Dog Jog</h2>
+					<span class="nextEvent">Patty in WLIO</span>
+				  <a href="http://www.hometownstations.com/story/15771514/fighting-pancreatic-cancer" target="_blank" class="ctaButton">Click here!</a>
+				  <h2 class="ctaText">Patty featured on WLIO</h2>
 				<?php break;
 				default: ?>
-					<span class="nextEvent">Tee off for Patty...</span>
-					<a href="golf.php" class="ctaButton">Register now!</a>
-					<h2 class="ctaText">Puttin' Fore Patty Golf Scramble</h2>
+					<span class="nextEvent">Patty's Chicken BBQ Pics</span>
+				  <a href="http://www.flickr.com/photos/69287246@N07/sets/72157627901216367/" target="_blank" class="ctaButton">Click here!</a>
+				  <h2 class="ctaText">We now have pictures Patty's Chicken BBQ!</h2>
 				<?php break;
-			} ?>-->
-				<span class="nextEvent">Patty's Day 2010 Pics</span>
-				<a href="res.php" class="ctaButton">Click here!</a>
-				<h2 class="ctaText">We now have pictures and results from Patty's Day!</h2>
-
+			} ?>
 	</div>
 </div><!-- colorContent -->
 <?php include('include/footer.php'); ?>

@@ -11,14 +11,6 @@
 			<div class="clearFloat"></div>
 		</div>
 		<div class="eventSummary">
-			<img class="ePicture" src="images/chicken.jpg" />
-			<h5><a href="files/chickenbbq.docx">Patty's Chicken BBQ, Elida and Van Wert</a></h5>
-			<span class="date">Orders through October 14th, Pickup October 22nd</span>
-			<p>ICU is taking orders for a benefit BBQ dinner for a co-worker/friend battling pancreatic cancer. <a href="files/chickenbbq.docx">...</a></p>
-			<div class="clearFloat"></div>
-		</div>
-
-		<div class="eventSummary">
 			<img class="ePicture" src="images/bracelet.jpg" />
 			<h5>Patty's Pals Bracelet Sale</h5>
 			<span class="date">Ongoing</span>

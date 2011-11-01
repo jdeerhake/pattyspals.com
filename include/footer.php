@@ -7,10 +7,6 @@
 						<strong>Nov 11th - </strong>
 						<a href="events.php">Patty's Purse Bingo</a>
 					</span>
-					<span class="item">
-						<strong>Oct 22nd - </strong>
-						<a href="events.php">Patty's Chicken BBQ</a>
-					</span>
 				  <span class="item">
 						<strong>Ongoing - </strong>
 						<a href="#">Patty's Pals Bracelet Sale</a>

@@ -13,7 +13,7 @@ var navHighlight = {
 	}
 }
 
-var formFunctions = { 
+var formFunctions = {
 	init : function() {
 		$(".transform").jqTransform();
 		$(".change").change(formFunctions.selectChange);
@@ -55,14 +55,14 @@ var formFunctions = {
 								.fadeIn(300);
 						});
 				}
-			});	
+			});
 		});
 		return false;
 	},
 	showFormScroll : function() {
 		$("div.formHolder").show();
 		window.location.href="#entry";
-		
+
 	},
 	slideForm : function() {
 		$("div.formHolder").slideDown("300");
@@ -87,11 +87,26 @@ var formFunctions = {
 var pictureCycle = {
 	max : 7,
 	init : function() {
-		this.pictList = new Array();
-		for(x = 0; x <= this.max; x++) {
-			this.pictList[x] = $("<img src='images/photos/patty" + x + ".jpg' alt='Patty' class='rightImage loadHidden' />").appendTo("body");
-		}
-		this.startCycle();
+	  var list = [];
+
+	  jQuery.ajax({
+      url : "http://api.flickr.com/services/feeds/photoset.gne?set=72157627901194815&nsid=469287246@N07&lang=en-us&format=json",
+      dataType : "jsonp",
+      jsonp : "jsoncallback",
+      success : function(data) {
+        var pics = data.items, cur, url;
+        var i = 0, x = pics.length;
+
+        for(i = 0; i < x; i++) {
+          url = pics[i].media.m.replace("_m.jpg", "_z.jpg");
+          cur = $("<img src='" + url + "' alt='Patty' class='rightImage loadHidden' />").appendTo("body");
+          list.push(cur);
+        }
+
+        pictureCycle.pictList = list;
+        pictureCycle.startCycle();
+      }
+    });
 	},
 	startCycle : function() {
 		this.i = 0;
@@ -119,3 +134,4 @@ $(document).ready(function() {
 		pictureCycle.init();
 	}
 });
+
