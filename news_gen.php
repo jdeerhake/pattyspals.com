@@ -11,7 +11,7 @@ $file = fopen("news.php", 'w') or die("Error: Couldn't open file for writing.\n"
 foreach(array($entries[0], $entries[1]) as $i) {
 	$ex = new simple_html_dom();
 	$ex->load($i->innertext);
-	$date = $ex->find("p");
+	$date = $ex->find("h5");
 	$msg = $ex->find("div");
 	fwrite($file, "<span class='item'>\n");
 	fwrite($file, "\t<p class='newsArt'><a href='http://www.caringbridge.org/visit/pattyrojas/journal'>" . substr(trim(strip_tags($msg[0]->innertext)), 0, 100) . "...</a></p>\n");
@@ -38,3 +38,4 @@ $res = mail($to, "CaringBridge Screen Scrape", $message, $headers);
 
 ?>
 </pre>
+
