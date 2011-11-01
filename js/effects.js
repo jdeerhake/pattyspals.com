@@ -85,7 +85,6 @@ var formFunctions = {
 }
 
 var pictureCycle = {
-  len : 10,
 	init : function() {
 	  var list = [];
 
@@ -102,8 +101,6 @@ var pictureCycle = {
           cur = $("<img src='" + url + "' alt='Patty' class='rightImage loadHidden' />").appendTo("body");
           list.push(cur);
         }
-
-        pictureCycle.len = data.length;
         pictureCycle.pictList = list;
         pictureCycle.startCycle();
 
@@ -126,7 +123,7 @@ var pictureCycle = {
 			current.remove();
 		});
 		this.i++;
-		if(this.i > this.max) {
+		if(this.i >= this.pictList.length) {
 			this.i = 0;
 		}
 	}
