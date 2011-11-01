@@ -85,7 +85,7 @@ var formFunctions = {
 }
 
 var pictureCycle = {
-	max : 7,
+  len : 10,
 	init : function() {
 	  var list = [];
 
@@ -94,7 +94,7 @@ var pictureCycle = {
       dataType : "jsonp",
       jsonp : "jsoncallback",
       success : function(data) {
-        var pics = data.items, cur, url;
+        var pics = data.items.sort(randomize), cur, url;
         var i = 0, x = pics.length;
 
         for(i = 0; i < x; i++) {
@@ -103,8 +103,13 @@ var pictureCycle = {
           list.push(cur);
         }
 
+        pictureCycle.len = data.length;
         pictureCycle.pictList = list;
         pictureCycle.startCycle();
+
+        function randomize(a, b) {
+          return( parseInt( Math.random()*10 ) % 2 );
+        }
       }
     });
 	},

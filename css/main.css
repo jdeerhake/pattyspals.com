@@ -1,11 +1,11 @@
 /* Colors :
 	Std Purple: #67006d
-	
-	
+
+
 	Std Pink: #d112dc
-	
+
 	Dark pink: #c20fcb
-	
+
 */
 
 
@@ -41,23 +41,23 @@
 	h5 { font-size: 20px; }
 	em { font-style: italic; }
 	strong { font-weight: bold; }
-	
+
 	a, a:active { color: #fff; text-decoration: none; }
 	a:hover, a:focus { text-decoration: underline; }
-	
+
 	ul.hMenu { }
 		ul.hMenu li { float: left; padding: 5px; margin: 5px; }
-		
+
 	.roundedCorners { -webkit-border-radius: 13px; -moz-border-radius: 13px; border-radius: 13px; }
 	.clearFloat { clear: both; }
 	.loadHidden { position: fixed; left: -9999px; }
 	.load { margin: 30px 300px; }
 	.floatRight { float: right; margin: 10px;}
 	.floatLeft { float: left; margin: 10px; }
-	
+
 	.loadShow { position: relative; left: 0px; }
 	.innerWrap { width: 960px; margin: 0 auto; }
-	
+
 
 /* ================= */
 /*  Header           */
@@ -96,7 +96,7 @@
 			div#twoCol div.leftCol p { margin: 10px 0; }
 		div#twoCol div.rightCol { float: right; width: 285px; padding: 20px; }
 			div#twoCol div.rightCol p { margin: 10px 0 25px 0;  }
-			
+
 	div.formHolder { margin-top: 15px; }
 		div.formHolder div.formRow { padding: 15px 10px; clear: both; }
 			div.formHolder div.formRow label { width: 270px; }
@@ -105,7 +105,7 @@
 			div.formHolder div.formRow select { width: 200px; }
 			div.formHolder div.formRow .submit { float: right; margin-right: 45px; }
 	div.withBorder { border: 1px solid #66006d; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
-	
+
 	ul.address { margin: 0 0 0 15px; }
 		ul.address li { margin: 0; }
 
@@ -119,14 +119,14 @@
 			div.colorContent div.top p { width: 420px; margin-top: 10px; text-align: justify; }
 			div.colorContent div.top p a { text-decoration: underline; }
 			div.colorContent div.top div.imageHolder { float: right; position: relative; top: 0; left: -400px; }
-			div.colorContent div.top img.rightImage { position: absolute; left: 0; top: 0; width: 400px; height: 210px; -moz-box-shadow: 0 0 12px 2px #CCC; -webkit-box-shadow: 0 0 12px 2px #CCC; }
+			div.colorContent div.top img.rightImage { position: absolute; left: 0; top: 0; max-width: 400px; max-height: 210px; -moz-box-shadow: 0 0 12px 2px #CCC; -webkit-box-shadow: 0 0 12px 2px #CCC; }
 		div.colorContent div.bottom { height: 40px; padding: 20px 40px; position: relative; }
 			div.colorContent div.bottom a.ctaButton { display: block; color: #FFF; font-size: 26px; float: right; margin: -8px 20px 0 0; padding: 12px 40px; border: 2px solid #f90; background-color: #f90; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
 			div.colorContent div.bottom a.ctaButton:hover,
 			div.colorContent div.bottom a.ctaButton:focus { border: 2px solid #FFF; text-decoration: none; }
 			div.colorContent div.bottom span.nextEvent { font-family: "Lobster", arial; position: absolute; left: 40px; top: 4px; font-size: 20px; font-style: italic; }
 			div.colorContent div.bottom h2.ctaText { float: left; margin: 5px 0 0 60px; }
-			
+
 
 /* ================= */
 /*  Events           */
@@ -136,7 +136,7 @@
 		div.eventSummary img.ePicture { width: 267px; height: 150px; float: left; padding-right: 20px; }
 		div.eventSummary span.date { font-style: italic; font-size: 20px; }
 		div.eventSummary p { margin-top: 10px; font-size: 18px; }
-		
+
 	div.event {}
 		div.event h3.subTitle { margin-left: 15px; font-size: 24px; font-style: italic; }
 		div.event p { padding: 8px 0; }
@@ -149,7 +149,7 @@
 			div.event p#amtShow span#amt { font-weight: bold; }
 		div.rightCol ul.otherEvents { margin: -20px 0 35px 25px; }
 			div.rightCol ul.otherEvents li { margin: 4px 0; }
-			
+
   dl.winnerList dt { font-weight: bold; margin-left: 5px; }
   dl.winnerList dd { margin-left: 15px; }
 
@@ -179,7 +179,7 @@
 			div.whiteContent div.trioBox div.bottom { padding: 5px 23px; }
 				div.whiteContent div.trioBox div.bottom  a,
 				div.whiteContent div.trioBox div.bottom  a:active { float: right; color: #444; }
-					
+
 /* ================= */
 /*  Footer           */
 /* ================= */
@@ -188,3 +188,4 @@
 		div#footer div#copyright { float: left;  margin-top: 10px; }
 		div#footer div#footerNav { float: right; }
 			div#footer div#footerNav a { color: #c70dd0; text-transform: lowercase; }
+
