@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php if( extension_loaded('newrelic') ) { echo newrelic_get_browser_timing_header(); } ?>
 <meta charset="utf-8" />
 <title>Patty's Pals</title>
 <link rel="favicon" href="favicon.ico" />
@@ -38,3 +39,4 @@
 	</div><!-- topNav -->
 	<div id="mainContent">
 	<div class="innerWrap">
+
