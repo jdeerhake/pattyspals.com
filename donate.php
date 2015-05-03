@@ -2,7 +2,7 @@
 <div id="twoCol">
 	<div class="leftCol">
 		<h2>Donate to Patty's Pals</h2>
-		<p>A donation to Patty's Pals is a donation to Patty. 100% of your donation will be given to Patty's family.<p>
+		<p>Patty’s Pals cannot begin to thank all of those who donate time, money, gifts, and most important, their love and caring! Your assistance in keeping Patty's memory alive by supporting her wish of increasing pancreatic cancer awareness continues to mean more to family and friends than you will ever know. Thank you from the many hearts that loved and still love Patty.<p>
 		<div>To donate, please make checks payable to "Patty's Pals" and mail them to:
 			<ul class="address">
 				<li>501 East 3rd Street</li>

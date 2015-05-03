@@ -2,12 +2,13 @@
 <div id="twoCol">
 	<div class="leftCol">
 		<h2>About Patty's Pals</h2>
-		<p>Patty's Pals is a group that has come together to assist a wonderful person in great need. Many of us are critical care nurses, some are not, however, all of us share the common goal of helping our friend Patty deal with cancer. It occurred to us that, collectively, we have helped thousands of people through all sorts of acute health care crises and now we have a chance to help one of our own.</p>
-		<p>Our goal is to raise funds for Patty through positive events that bring caring people together. She is a person who values independence and wisdom. We hope to assist her in maintaining these values throughout her course of cancer treatment.</p>
+		<p>Patty's Pals is a group that came together to assist a special critical care nurse suffering from Stage IV pancreatic cancer, Patty Rojas. Many of us are nurses, some are not; however, all of us shared the common goal of helping our friend and loved one Patty deal with cancer and all the pain it can bring. It occurred to us that, collectively, we had helped thousands of people through all sorts of acute health care crises and now we had a chance to help one of our own.</p>
+
+		<p>At that time, our goal was to raise funds for Patty through positive events that bring caring people together. Sadly, Patty lost her battle with cancer on November 9, 2011, the day before her youngest child’s second birthday. Although she left us in body, Patty's independent and carefree spirit remains with us always.  Currently, Patty’s Pals carries on her legacy through a spirited annual event, Patty’s Purse Bingo. Via this happy occasion, we encourage attendees to honor the memory of Patty and other pancreatic cancer sufferers by remembering and celebrating their zest for life.  All of the proceeds benefit the Pancreatic Cancer Action Network.</p>
+
 	</div><!-- leftCol -->
 	<div class="rightCol">
 		<h4>Donate to Patty's Pals</h4>
-		<p>100% of your donation will be given to Patty's family.<p>
 		<div>Please make checks payable to "Patty's Pals" and mail them to:
 			<ul class="address">
 				<li>501 East 3rd Street</li>

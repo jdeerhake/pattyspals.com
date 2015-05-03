@@ -4,16 +4,20 @@
 					<img class="bigIcon" src="images/calendar.png" />
 					<h3 class="boxTitle">Upcoming Events</h3>
 					<span class="item">
-						<strong>Nov 11th - </strong>
+						<strong>Nov 2nd - Pancreatic Cancer Month Kickoff.</strong>
+						<a href="events.php"></a>
+					</span>
+					<span class="item">
+						<strong>Nov 21st - </strong>
 						<a href="events.php">Patty's Purse Bingo</a>
 					</span>
 				  <span class="item">
 						<strong>Ongoing - </strong>
-						<a href="#">Patty's Pals Bracelet Sale</a>
+						<a href="events.php">Patty's Pals Bracelet Sale</a>
 					</span>
 				</div>
 				<div class="bottom">
-					<a href="events.php">More...</a>
+					<a href="https://www.pancan.org/section_get_involved/events_fundraising/find_event.php" target="_blank">Pancreatic Cancer Action Network events</a>
 				</div>
 			</div>
 			<div class="trioBox center">
@@ -32,7 +36,7 @@
 					<h3 class="boxTitle">Ways to Help</h3>
 					<div class="clearFloat"></div>
 					<span class="item">
-						<a href="donate.php">Donate to Patty's family</a>
+						<a href="donate.php">Donate to Patty's Pals</a>
 					</span>
 					<span class="item">
 						<a href="events.php">Participate in a fund raising event</a>
@@ -44,6 +48,9 @@
 								<a href="files/pursebingo.docx">Patty's Purse Bingo Flyer</a>
 							</li>
 						</ul>
+					</span>
+					<span class="item">
+						<a href="https://www.pancan.org/section_get_involved/advocate/advocacy_day_2015/index.html" target="_blank">National Pancreatic Cancer Advocacy Day in Washington D.C.</a>
 					</span>
 				</div>
 				<div class="bottom">
