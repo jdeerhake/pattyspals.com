@@ -4,8 +4,8 @@
 					<img class="bigIcon" src="images/calendar.png" />
 					<h3 class="boxTitle">Upcoming Events</h3>
 					<span class="item">
-						<strong>Nov 2nd - Pancreatic Cancer Month Kickoff.</strong>
-						<a href="events.php"></a>
+						<strong>Nov 2nd - </strong>
+						<a href="events.php">Pancreatic Cancer Month Kickoff</a>
 					</span>
 					<span class="item">
 						<strong>Nov 21st - </strong>
@@ -15,9 +15,12 @@
 						<strong>Ongoing - </strong>
 						<a href="events.php">Patty's Pals Bracelet Sale</a>
 					</span>
+					<span class="item">
+						<a href="https://www.pancan.org/section_get_involved/events_fundraising/find_event.php" target="_blank">Pancreatic Cancer Action Network events</a>
+					</span>
 				</div>
 				<div class="bottom">
-					<a href="https://www.pancan.org/section_get_involved/events_fundraising/find_event.php" target="_blank">Pancreatic Cancer Action Network events</a>
+					<a href="events.php">More...</a>
 				</div>
 			</div>
 			<div class="trioBox center">
@@ -27,7 +30,6 @@
 					<?php include('news.php'); ?>
 				</div>
 				<div class="bottom">
-					<a href="http://www.caringbridge.org/visit/pattyrojas/">More...</a>
 				</div>
 			</div>
 			<div class="trioBox right">
@@ -63,7 +65,7 @@
 <div id="footer">
 	<div class="innerWrap">
 		<div id="copyright">
-			<p>&copy; 2011</p>
+			<p>&copy; 2015</p>
 		</div>
 		<div id="footerNav">
 			<ul class="hMenu">
