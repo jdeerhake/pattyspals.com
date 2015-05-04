@@ -1,8 +1,0 @@
-/* ================= */
-/*  Header           */
-/* ================= */
-
-	img#ribbon { display: none; }
-	img#ribbon_ie6 { display: block !important; }
-	.loadHidden { display: none; }
-	.rightCol { width: 265px !important;}
