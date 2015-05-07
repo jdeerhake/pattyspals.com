@@ -1,0 +1,24 @@
+// These values taken from theme CSS
+$desktop: 70em;
+$laptop: 65em;
+$tablet_landscape: 60em;
+$tablet_portrait: 50em;
+$phablet: 40em;
+$phone: 30em;
+$small_phone: 20em;
+
+
+@mixin breakpoint($point) {
+   @if $point == desktop_wide {
+     @media (min-width: $desktop) { @content ; }
+  }
+   @else if $point == desktop {
+     @media (min-width: $laptop) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: $tablet_landscape) { @content ; }
+  }
+   @else if $point ==  phone {
+     @media (min-width: $phablet)  { @content ; }
+  }
+}

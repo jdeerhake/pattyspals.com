@@ -15,9 +15,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -27,7 +27,7 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -93,15 +93,15 @@ input[type="submit"]:hover {
 }
 
 /* Clearing Floats */
-.clearfix:before, .clearfix:after {  
+.clearfix:before, .clearfix:after {
 	content: " ";
-	display: table;  
-}  
-.clearfix:after {  
+	display: table;
+}
+.clearfix:after {
 	clear: both;
-}  
+}
 .clearfix {
-    *zoom: 1; /* For IE 6/7 only */  
+    *zoom: 1; /* For IE 6/7 only */
 }
 
 /* Make Form Elements responsive */
@@ -109,7 +109,7 @@ input, textarea, select {
 	max-width: 100%;
 }
 
-/* Basic Structure 
+/* Basic Structure
 -------------------------------------------------------------- */
 #wrapper {
 	width: 100%;
@@ -795,18 +795,18 @@ article .wp-post-image {
 	font-size: 0.9em;
 	text-align: center;
 }
-.alignleft { 
-	float: left; 
-	display: inline; 
+.alignleft {
+	float: left;
+	display: inline;
 	margin: 1em 2em 1em 0;
 }
 .alignright	{
-	float: right; 
-	display: inline; 
+	float: right;
+	display: inline;
 	margin: 1em 0 1em 2em;
 }
 .aligncenter {
-	margin: 1em auto; 
+	margin: 1em auto;
 	display: block;
 }
 
@@ -1100,7 +1100,7 @@ embed, iframe, object, video {
 .comment-meta .commentmetadata {
 	font-size: 0.9em;
 }
-.comment-meta .commentmetadata a:link, .comment-meta .commentmetadata a:visited, 
+.comment-meta .commentmetadata a:link, .comment-meta .commentmetadata a:visited,
 .comment-meta .commentmetadata a:active, .comment-meta .commentmetadata a:hover {
 	color: #666 !important;
 }
@@ -1280,7 +1280,7 @@ embed, iframe, object, video {
 	#footer {
 		padding: 1.2em;
 	}
-	
+
 	/* Featured Content */
 	#featured-content {
 		margin-right: -1.5em;
@@ -1306,7 +1306,7 @@ embed, iframe, object, video {
 
 
 	/* Mobile Top Navigation */
-	
+
 	/* Reset */
 	#topnav-wrap, #topnav, #topnav-menu, #topnav-menu li, #topnav-menu a, #topnav-menu ul {
 		margin: 0;
@@ -1321,7 +1321,7 @@ embed, iframe, object, video {
 		top: 0;
 		left: 0;
 	}
-	
+
 	#header-content {
 		float: none;
 	}
@@ -1373,13 +1373,13 @@ embed, iframe, object, video {
 	#topnav-menu li.current_page_item a, #topnav-menu li.current-menu-item a {
 		text-decoration: underline;
 	}
-	
-	
+
+
 	/* Mobile Main Navigation */
-	
+
 	/* Reset */
-	#mainnav, #mainnav-menu, #mainnav-menu li, #mainnav-menu a, #mainnav-menu ul, 
-	#mainnav-menu ul a, #mainnav-menu ul ul, #mainnav-menu li ul ul 
+	#mainnav, #mainnav-menu, #mainnav-menu li, #mainnav-menu a, #mainnav-menu ul,
+	#mainnav-menu ul a, #mainnav-menu ul ul, #mainnav-menu li ul ul
 	{
 		margin: 0;
 		padding: 0;
@@ -1398,7 +1398,7 @@ embed, iframe, object, video {
 	{
 		display: inline;
 	}
-	
+
 	#mainnav {
 		float: none;
 	}
@@ -1453,7 +1453,7 @@ embed, iframe, object, video {
 		color: #222;
 	}
 	#mainnav-menu a:hover {
-		color: #22a8d8; 
+		color: #22a8d8;
 	}
 	#mainnav-menu ul {
 		float: left;
@@ -1618,7 +1618,7 @@ embed, iframe, object, video {
 	.postinfo .meta-tags {
 		margin: 0.3em 0 0 0;
 	}
-	
+
 	/* Mobile Main Navigation */
 	#mainnav-icon-tablet {
 		display: none;
@@ -1626,7 +1626,7 @@ embed, iframe, object, video {
 	#mainnav-icon-phone {
 		display: inline-block;
 	}
-	
+
 	/* Social Menu Dropdown */
 	#social-menu-icon {
 		float: right;

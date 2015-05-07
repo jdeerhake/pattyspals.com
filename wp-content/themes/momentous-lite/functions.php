@@ -6,38 +6,38 @@
 add_action('wp_enqueue_scripts', 'momentous_enqueue_scripts');
 
 if ( ! function_exists( 'momentous_enqueue_scripts' ) ):
-function momentous_enqueue_scripts() { 
-	
+function momentous_enqueue_scripts() {
+
 	// Register and Enqueue Stylesheet
 	wp_enqueue_style('momentous-lite-stylesheet', get_stylesheet_uri());
-	
+
 	// Register Genericons
 	wp_enqueue_style('momentous-lite-genericons', get_template_directory_uri() . '/css/genericons/genericons.css');
 
 	// Register and enqueue navigation.js
 	wp_enqueue_script('momentous-lite-jquery-navigation', get_template_directory_uri() .'/js/navigation.js', array('jquery'));
-	
+
 	// Get Theme Options from Database
 	$theme_options = momentous_theme_options();
-	
+
 	// Register and Enqueue Masonry JS for two column post layout
 	if ( isset($theme_options['post_layout']) and $theme_options['post_layout'] == 'index' ) :
-	
+
 		// Register and enqueue masonry script
 		wp_enqueue_script('masonry');
 		wp_enqueue_script('momentous-lite-masonry', get_template_directory_uri() .'/js/masonry-init.js', array('jquery', 'masonry'));
-		
+
 	endif;
-	
+
 	// Register and Enqueue Font
 	wp_enqueue_style('momentous-lite-default-fonts', momentous_fonts_url(), array(), null );
-	
+
 }
 endif;
 
 // Load comment-reply.js if comment form is loaded and threaded comments activated
 add_action( 'comment_form_before', 'momentous_enqueue_comment_reply' );
-	
+
 function momentous_enqueue_comment_reply() {
 	if( get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -63,26 +63,26 @@ function momentous_fonts_url() {
 
 	// Get Theme Options from Database
 	$theme_options = momentous_theme_options();
-	
+
 	// Only embed Google Fonts if not deactivated
 	if ( ! ( isset($theme_options['deactivate_google_fonts']) and $theme_options['deactivate_google_fonts'] == true ) ) :
-		
+
 		// Set Default Fonts
-		$font_families = array('Average Sans:400,700', 'Fjalla One');
-		 
+		$font_families = array('Average Sans:400,700', 'Fjalla One', 'Lobster');
+
 		// Set Google Font Query Args
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
 			'subset' => urlencode( 'latin,latin-ext' ),
 		);
-		
+
 		// Create Fonts URL
 		$fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
-		
+
 	endif;
-	
+
 	return apply_filters( 'momentous_google_fonts_url', $fonts_url );
-	
+
 }
 
 
@@ -90,16 +90,16 @@ function momentous_fonts_url() {
 add_action( 'after_setup_theme', 'momentous_setup' );
 
 if ( ! function_exists( 'momentous_setup' ) ):
-function momentous_setup() { 
-	
+function momentous_setup() {
+
 	// Set Content Width
 	global $content_width;
 	if ( ! isset( $content_width ) )
 		$content_width = 860;
-		
+
 	// init Localization
 	load_theme_textdomain('momentous-lite', get_template_directory() . '/languages' );
-	
+
 	// Add Theme Support
 	add_theme_support('post-thumbnails');
 	add_theme_support('automatic-feed-links');
@@ -115,18 +115,18 @@ function momentous_setup() {
 		'width'	=> 1310,
 		'height' => 240,
 		'flex-height' => true));
-	
+
 	// Add Theme Support for Momentous Pro Plugin
 	add_theme_support( 'momentous-pro' );
-		
+
 	// Register Navigation Menus
 	register_nav_menus( array(
 		'primary'   => __('Main Navigation', 'momentous-lite'),
 		'secondary' => __('Top Navigation', 'momentous-lite'),
 		'social' => __('Social Icons', 'momentous-lite'),
-		) 
+		)
 	);
-	
+
 }
 endif;
 
@@ -135,11 +135,11 @@ endif;
 add_action( 'after_setup_theme', 'momentous_add_image_sizes' );
 
 if ( ! function_exists( 'momentous_add_image_sizes' ) ):
-function momentous_add_image_sizes() { 
-	
+function momentous_add_image_sizes() {
+
 	// Add Custom Header Image Size
 	add_image_size( 'custom_header_image', 1300, 240, true);
-	
+
 	// Add Featured Image Size
 	add_image_size( 'post-thumbnail', 900, 300, true);
 
@@ -152,7 +152,7 @@ add_action( 'widgets_init', 'momentous_register_sidebars' );
 
 if ( ! function_exists( 'momentous_register_sidebars' ) ):
 function momentous_register_sidebars() {
-	
+
 	// Register Sidebars
 	register_sidebar( array(
 		'name' => __( 'Sidebar', 'momentous-lite'),
@@ -163,7 +163,7 @@ function momentous_register_sidebars() {
 		'before_title' => '<h3 class="widgettitle"><span>',
 		'after_title' => '</span></h3>',
 	));
-	
+
 }
 endif;
 
@@ -173,12 +173,12 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) :
 
 	add_action( 'wp_head', 'momentous_wp_title' );
 	function momentous_wp_title() { ?>
-		
+
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 <?php
     }
-    
+
 endif;
 
 
@@ -215,7 +215,7 @@ function  momentous_featured_content_excerpt_length($length) {
 // Change Excerpt More
 add_filter('excerpt_more', 'momentous_excerpt_more');
 function momentous_excerpt_more($more) {
-    
+
 	// Get Theme Options from Database
 	$theme_options = momentous_theme_options();
 
@@ -231,24 +231,24 @@ function momentous_excerpt_more($more) {
 // Custom Template for comments and pingbacks.
 if ( ! function_exists( 'momentous_list_comments' ) ):
 function momentous_list_comments($comment, $args, $depth) {
-	
+
 	$GLOBALS['comment'] = $comment;
-	
+
 	if( $comment->comment_type == 'pingback' or $comment->comment_type == 'trackback' ) : ?>
-	
+
 		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-			<p><?php _e( 'Pingback:', 'momentous-lite'); ?> <?php comment_author_link(); ?> 
+			<p><?php _e( 'Pingback:', 'momentous-lite'); ?> <?php comment_author_link(); ?>
 			<?php edit_comment_link( __( '(Edit)', 'momentous-lite'), '<span class="edit-link">', '</span>' ); ?>
 			</p>
-	
+
 	<?php else : ?>
-	
+
 		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
 
 			<div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
-			
+
 				<div class="comment-meta">
-				
+
 					<div class="comment-author vcard">
 						<?php echo get_avatar( $comment, 56 ); ?>
 						<?php printf(__('<span class="fn">%s</span>', 'momentous-lite'), get_comment_author_link()) ?>
@@ -258,28 +258,28 @@ function momentous_list_comments($comment, $args, $depth) {
 						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><?php printf(__('%1$s at %2$s', 'momentous-lite'), get_comment_date(),  get_comment_time()) ?></a>
 						<?php edit_comment_link(__('(Edit)', 'momentous-lite'),'  ','') ?>
 					</div>
-					
+
 				</div>
-				
+
 				<div class="comment-content">
-					
+
 					<?php comment_text(); ?>
-					
+
 					<?php if ($comment->comment_approved == '0') : ?>
 						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'momentous-lite'); ?></p>
 					<?php endif; ?>
-					
+
 					<div class="reply">
 						<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 					</div>
 
 				</div>
-				
-				
+
+
 			</div>
 <?php
 	endif;
-	
+
 }
 endif;
 

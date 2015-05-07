@@ -1,3 +1,106 @@
+@import "breakpoints";
+$purple: #67006d;
+$pink: #c20fcb;
+
 #header-wrap {
-  background-color: #67006d;
+  background-color: $purple;
+
+  #header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    @include breakpoint(tablet) {
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+    }
+  }
+}
+
+#logo {
+
+  .site-title {
+    font-family: "Lobster";
+    text-align: right;
+    position: relative;
+    line-height: .9;
+    padding-left: 37px;
+    width: 99px;
+  }
+
+  a:hover .site-title {
+    text-decoration: none;
+  }
+
+  .site-title:before {
+    content: "";
+    background: url(../images/ribbon.png);
+    background-size: cover;
+    position: absolute;
+    width: 74px;
+    height: 100px;
+    top: -13px;
+    left: -7px;
+  }
+
+  @include breakpoint(tablet) {
+    .site-title:before {
+      left: -27px;
+      top: -18px;
+      width: 103px;
+      height: 140px;
+    }
+
+    .site-title {
+      width: 108px;
+      padding-left: 34px;
+    }
+  }
+}
+
+#navigation-wrap {
+  background-color: $pink;
+  border-top: 1px solid #fff;
+
+  .mainnav-icon, #social-menu-icon {
+    &:after {
+      color: #fff;
+    }
+
+    &:hover:after {
+      color: $purple;
+    }
+  }
+
+  a, a:link, a:visited {
+    color: $purple;
+  }
+
+  #mainnav-menu {
+    li.current_page_item a, li.current-menu-item a, a:hover {
+      color: $pink;
+      text-decoration: none;
+    }
+
+    @include breakpoint(tablet) {
+      a, a:link, a:visited {
+        color: #fff;
+        text-transform: lowercase;
+        font-size: 1.1em;
+        font-weight: normal;
+      }
+
+      li.current_page_item a, li.current-menu-item a, a:hover {
+        font-weight: bold;
+        color: #fff;
+      }
+
+      li:first-child a {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+#footer-bg {
+  background-color: $purple;
 }
