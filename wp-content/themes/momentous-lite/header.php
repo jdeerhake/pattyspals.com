@@ -82,7 +82,7 @@
 				<p id="mainnav-icon-tablet" class="mainnav-icon"></p><p id="mainnav-icon-phone" class="mainnav-icon"></p><p id="social-menu-icon"></p>
 				
 				<?php // Display Social Icons in Navigation
-					if ( isset($theme_options['header_icons']) and $theme_options['header_icons'] == true ) : ?>
+					if ( true or ( isset($theme_options['header_icons']) and $theme_options['header_icons'] == true ) ) : ?>
 
 						<div id="navi-social-icons" class="social-icons-wrap clearfix">
 							<?php momentous_display_social_icons(); ?>
