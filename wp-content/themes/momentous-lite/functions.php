@@ -68,7 +68,7 @@ function momentous_fonts_url() {
 	if ( ! ( isset($theme_options['deactivate_google_fonts']) and $theme_options['deactivate_google_fonts'] == true ) ) :
 
 		// Set Default Fonts
-		$font_families = array('Average Sans:400,700', 'Fjalla One', 'Lobster Two:700italic');
+		$font_families = array('Open Sans:300,700', 'Fjalla One', 'Lobster Two:700italic');
 
 		// Set Google Font Query Args
 		$query_args = array(
