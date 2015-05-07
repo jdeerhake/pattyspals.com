@@ -62,6 +62,14 @@ $pink: #c20fcb;
   background-color: $pink;
   border-top: 1px solid #fff;
 
+  #social-icons-menu {
+    li a:before {
+      color: #fff;
+      font-size: 25px;
+      line-height: 32px;
+    }
+  }
+
   .mainnav-icon, #social-menu-icon {
     &:after {
       color: #fff;
