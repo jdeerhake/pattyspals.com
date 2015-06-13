@@ -13,7 +13,7 @@ $wp_cache_mobile_prefixes = 'w3c , w3c-, acs-, alav, alca, amoi, audi, avan, ben
 $wp_cache_refresh_single_only = '0'; //Added by WP-Cache Manager
 $wp_cache_make_known_anon = 0; //Added by WP-Cache Manager
 $wp_cache_mod_rewrite = 0; //Added by WP-Cache Manager
-$wp_cache_front_page_checks = 0; //Added by WP-Cache Manager
+$wp_cache_front_page_checks = 1; //Added by WP-Cache Manager
 $wp_cache_mfunc_enabled = 0; //Added by WP-Cache Manager
 $wp_supercache_304 = 1; //Added by WP-Cache Manager
 $wp_cache_no_cache_for_get = 0; //Added by WP-Cache Manager
@@ -32,7 +32,7 @@ $cache_max_time = '1800'; //Added by WP-Cache Manager
 //$use_flock = true; // Set it true or false if you know what to use
 $cache_path = WP_CONTENT_DIR . '/cache/';
 $file_prefix = 'wp-cache-';
-$ossdlcdn = 0; //Added by WP-Cache Manager
+$ossdlcdn = 1; //Added by WP-Cache Manager
 
 // Array of files that have 'wp-' but should still be cached
 $cache_acceptable_files = array( 'wp-comments-popup.php', 'wp-links-opml.php', 'wp-locations.php' );
