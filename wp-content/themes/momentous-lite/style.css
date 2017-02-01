@@ -65,7 +65,7 @@ body {
 
 /* Links */
 a, a:link, a:visited{
-	color: #22a8d8;
+	color: #912CEE;
 	text-decoration: none;
 }
 a:hover, a:active {
@@ -390,7 +390,7 @@ input, textarea, select {
 }
 .widget a:link, .widget a:visited  {
 	text-decoration: none;
-	color: #22a8d8;
+	color: #912CEE;
 }
 .widget a:hover, .widget a:active {
 	text-decoration: underline;
@@ -503,7 +503,7 @@ input, textarea, select {
 	border-top: 1px solid #ddd;
 }
 .postinfo .meta-tags {
-	margin-left: 1em;
+	margin-right: 1em;
 }
 .postinfo span:before, .postinfo .meta-comments a:before {
 	display: inline-block;
